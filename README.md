@@ -79,3 +79,15 @@ Here we see how the session ends, based on alerts (when the file has been upload
 ![Code 2](./assets/code2.PNG?raw=true "Code2")
 
 **std is c++ speak for 'standard' library. std::cout basically means std.cout or in PHP speak, std => cout. In C++ you can say 'using namespace std' to empty all of std's identifiers into the global namespace, something like global scope. 
+
+Below is an example of torrent params, often stored in a .hpp header file for C++ compilation. 
+
+![Code 3](./assets/code3.PNG?raw=true "Code3")
+
+We've seen enum before- here it's defining what can be stored in an object (sorta like a model). 
+
+For example, we could write:
+
+enum CarTire { normal, wet, snow, sports };
+
+...which would mean that a car tire can ONLY be one of those types.
