@@ -1,6 +1,4 @@
-### bitTorrent
-
-### Intro to Bt
+# Intro to BitTorrent
 
 #### What is it?
 
@@ -43,8 +41,10 @@ Sally has a file >>> Richard requests it, and downloads >> Now they both have it
 
 ### The process in more detail:
 
-To start your life as a torrenter, you first install a client (uTorrent being the most prevalent), and then download a .torrent file. This relatively small file contains meta-data about trackers, i.e. servers that point your computer to other computers (peers) that are uploading the file you ar requesting.
+To start your life as a torrenter, you first install a client (uTorrent being the most prevalent), and then download a .torrent file. This relatively small file contains meta-data about trackers, i.e. servers that point your computer to other computers (peers) that are sharing/downloading the file.
 
 ![Step 1](./assets/step1.PNG?raw=true "Step 1")
+
+
 
 
