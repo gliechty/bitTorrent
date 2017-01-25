@@ -45,6 +45,6 @@ Sally has a file >>> Richard requests it, and downloads >> Now they both have it
 
 To start your life as a torrenter, you first install a client (uTorrent being the most prevalent), and then download a .torrent file. This relatively small file contains meta-data about trackers, i.e. servers that point your computer to other computers (peers) that are uploading the file you ar requesting.
 
-![Step 1](/assets/step1.png?raw=true "Step 1")
+![Step 1](./assets/step1.PNG?raw=true "Step 1")
 
 
