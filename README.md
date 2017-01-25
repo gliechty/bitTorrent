@@ -2,7 +2,7 @@
 
 ### What is it?
 
-In a word... peer to peer file sharing (the thing people did before everyone got lazy and just did Netflix for watching movies). 
+In a word... peer-to-peer (P2P) file sharing. 
 
 ### What problem does it solve?
 
@@ -18,7 +18,7 @@ Which leads us to...
 
 Don't be a LEECHER. Be a SEEDER.
 
-Bit torrent tracks your upload to download ratio, which, if too low, can make the community hate you (like a griefer). For the system to work, the your ability to download must be equal to others' proclivity to upload. The more SEEDERS there are (people uploading files) the faster the overall download speed will be across the community. People who just download files without uploading, to save on personal bandwidth, are considered to be just a notch up from a common hagfish. File sharing can only exist with this balance being maintained. Otherwise it's just...file stealing?
+Bit torrent tracks your upload to download ratio, which, if too low, can make the community hate you (like a griefer). For the system to work, the your ability to download must be equal to others' proclivity to upload. The more SEEDERS there are (people uploading files) the faster the overall download speed will be across the community. People who just download files without uploading, to save on personal bandwidth, are considered to be just a notch up from the common hagfish. File sharing can only exist with this balance being maintained. Otherwise it's just...file mooching?
 
 ### Sounds sorta sketch, is it Legal?
 
@@ -26,6 +26,12 @@ Yes and No. Anything under creative commons (and/or something educational) is a 
 
 These countries are the safest:
 
+(according to limevpn.com)
+
+- Switzerland, the Land of Free Downloads (ok to download for personal use, not profit)
+- The Netherlands (ok to share works of art)
+- Mexico (they don't really have laws on this stuff)
+- Spain (one of the first countries to recognize intent to make profit vs intent to share)
 
 But this shows countries that download the most (spoiler alert: we're #1).
 
@@ -33,7 +39,7 @@ But this shows countries that download the most (spoiler alert: we're #1).
 
 ### How does it work/How do you use it?
 
-To start torrenting, you need two things: a torrent Client (like uTorrent) and a file to download- that's it. 
+To start torrenting, you need two things: a torrent client (like uTorrent) and a file to upload/download- that's it. 
 
 Here's how it starts: 
 
@@ -58,3 +64,7 @@ Large files are transfered in pieces in the same way, each with an 'index' that 
 ![Step 4](./assets/step5.PNG?raw=true "Step 4")
 
 ### The Code
+
+C++ is a pretty dominant language used for open-source bitTorrent client libraries. libTorrent is perhaps the most prevalent of these. (uTorrent is one of the largest overall, and was originally written in Python. Now it's become closed-source. Booo.)
+
+
