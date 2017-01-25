@@ -67,6 +67,15 @@ Large files are transfered in pieces in the same way, each with an 'index' that 
 
 C++ is a pretty dominant language used for open-source bitTorrent client libraries. libTorrent is perhaps the most prevalent of these. (uTorrent is one of the largest overall, and was originally written in Python. Now it's become closed-source. Booo.)
 
-The primary facet of uploading a torrent is specifying a session, or the context (params) and container for your torrent.  
+The primary facet of uploading a torrent is specifying a session, or the context (params) and container for your torrent. This is done by creating an add_torrent_params object, and passing it as an argument to add_torrent().
 
 ![Code 1](./assets/code1.PNG?raw=true "Code1")
+
+**BTdubs, a namespace is a "declarative region that provides a scope to the identifiers (the names of types, functions, variables, etc) inside it. " (-MSDN.microsoft.com). Something like a Class or an Object. The title of the namespace allows for global access to local identifiers (~keys) within the namespace. 
+
+
+Here we see how the session ends, based on alerts (when the file has been uploaded):
+
+![Code 2](./assets/code2.PNG?raw=true "Code2")
+
+**std is c++ speak for 'standard' library. std::cout basically means std.cout or in PHP speak, std => cout. In C++ you can say 'using namespace std' to empty all of std's identifiers into the global namespace, something like global scope. 
