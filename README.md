@@ -24,7 +24,14 @@ Bit torrent tracks your upload to download ratio, which, if too low, can make th
 
 ### But wait, is it Legal?
 
-Yes and No. Anything under creative commons (and/or something educational) is a YES. If under copyright, then no...on paper. To be safe, look for files with a large number of seeders and relatively few leechers, both for a faster download and to have a better sense of which side of the law you're on. 
+Yes and No. Anything under creative commons (and/or something educational) is a YES. If under copyright, then no...on paper. To be safe, look for files with a large number of seeders and relatively few leechers, both for a faster download and to have a better sense of which side of the law you're on.
+
+These countries are the safest:
+
+
+But this shows countries that download the most (spoiler alert: we're #1).
+
+![map of biggest downloaders](https://i.kinja-img.com/gawker-media/image/upload/s--FHGsk0-d--/c_fit,fl_progressive,q_80,w_636/17zg6lnxf04rnjpg.jpg "top downloaders")
 
 ### How does it work/How do you use it?
 
