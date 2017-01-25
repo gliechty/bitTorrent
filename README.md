@@ -1,12 +1,12 @@
 # Intro to BitTorrent
 
-#### What is it?
+### What is it?
 
-##### In a word... peer to peer file sharing (the thing people did before everyone got lazy and just did Netflix for watchng movies). 
+In a word... peer to peer file sharing (the thing people did before everyone got lazy and just did Netflix for watching movies). 
 
 ### What problem does it solve?
 
-In a normal client-server model, with many clients requesting the same file from a server, a server will crash if it gets overloaded. It's a one-way sorta thing. Like any relationship, with no give-and-take, things get strained. But wait...if Bob has a file, and I want it, and a computer is basically a server, and there are millions of people who have the same file (on as many servers), and millions that want it...why not just distribute these requests equally to avoid overload? Starting to make a lot more sense, right?
+In a normal client-server model, with many clients requesting the same file from a server, a server will crash if it gets overloaded. It's a one-way sorta thing. Like any relationship, with no give-and-take, things get strained. But wait...if Bob has a file, and I want it, and a computer is basically a server, and there are millions of people who have the same file (on as many servers), and millions that want it...why not just distribute these requests equally to avoid overload? Makes sense, right?
 
 But, why the 'bit'?
 
@@ -20,7 +20,7 @@ Don't be a LEECHER. Be a SEEDER.
 
 Bit torrent tracks your upload to download ratio, which, if too low, can make the community hate you (like a griefer). For the system to work, the your ability to download must be equal to others' proclivity to upload. The more SEEDERS there are (people uploading files) the faster the overall download speed will be across the community. People who just download files without uploading, to save on personal bandwidth, are considered to be just a notch up from a common hagfish. File sharing can only exist with this balance being maintained. Otherwise it's just...file stealing?
 
-### But wait, is it Legal?
+### Sounds sorta sketch, is it Legal?
 
 Yes and No. Anything under creative commons (and/or something educational) is a YES. If under copyright, then no...on paper. To be safe, look for files with a large number of seeders and relatively few leechers, both for a faster download and to have a better sense of which side of the law you're on.
 
@@ -41,10 +41,20 @@ Sally has a file >>> Richard requests it, and downloads >> Now they both have it
 
 ### The process in more detail:
 
-To start your life as a torrenter, you first install a client (uTorrent being the most prevalent), and then download a .torrent file. This relatively small file contains meta-data about trackers, i.e. servers that point your computer to other computers (peers) that are sharing/downloading the file.
+To start your life as a torrenter, you first install a client (uTorrent being the most prevalent), and then create a .torrent file. This relatively small file contains meta-data about trackers, i.e. servers that point your computer to other computers (peers) that are sharing/downloading the file. You now can start swarming.
 
-![Step 1](./assets/step1.PNG?raw=true "Step 1")
+![Step 1](./assets/step2.PNG?raw=true "Step 1")
 
+At first, you'll be the initial seeder. Imagine you have a file that can be broken into 10 parts. "Kevin" gets the first part, "Larry" gets the second, "Merry" gets the third, and so on throughout the 'cohort' of peers in your swarm. 
 
+![Step 2](./assets/step3.PNG?raw=true "Step 2")
 
+Here's where the magic happens. Everyone has their own little piece of the pie, but they can upload that piece and download others' simultaneously. The file sharing protocol favors altruistic peers, meaning it will connect by default with others who are uploading their chunks. 
 
+![Step 3](./assets/step4.PNG?raw=true "Step 3")
+
+Large files are transfered in pieces in the same way, each with an 'index' that identifies which part of the file it is. The client will keep track of these indexes, and sort the pieces no matter which order they are uploaded in. 
+
+![Step 4](./assets/step5.PNG?raw=true "Step 4")
+
+### The Code
