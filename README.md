@@ -39,9 +39,12 @@ To start torrenting, you need two things: a torrent Client (like uTorrent) and a
 
 Here's how it starts: 
 
-Sally has a file >>> Richard requests it, and downloads >> Now they both have it, and both upload >> Susy wants the same file, requests it, and downloads at twice the speed (!) >> ad infinitum //
+Sally has a file >>> Richard requests it, and downloads >> Now they both have it, and both upload >> Susy wants the same file, requests it, and downloads at twice the speed (!) >> ad infinitum...
 
-(Until Suzy uploads, she's a leecher, but she'll fix that soon enough).
+### The process in more detail:
 
-### What I've built with it (i.e. the demo)
+To start your life as a torrenter, you first install a client (uTorrent being the most prevalent), and then download a .torrent file. This relatively small file contains meta-data about trackers, i.e. servers that point your computer to other computers (peers) that are uploading the file you ar requesting.
+
+![Step 1](/assets/step1.png?raw=true "Step 1")
+
 
