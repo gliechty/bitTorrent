@@ -67,52 +67,6 @@ Large files are transfered in pieces in the same way, each with an 'index' that 
 
 C++ is a pretty dominant language used for open-source bitTorrent client libraries. libTorrent is perhaps the most prevalent of these. (uTorrent is one of the largest overall, and was originally written in Python. Now it's become closed-source. Booo.)
 
-One of the basics to adding a torrent file to a session is the add_torrent_params constructor, 
+The primary facet of uploading a torrent is specifying a session, or the context (params) and container for your torrent.  
 
-struct add_torrent_params
-{
-   add_torrent_params (storage_constructor_type sc = default_storage_constructor);
-
-   enum flags_t
-   {
-      flag_seed_mode,
-      flag_override_resume_data,
-      flag_upload_mode,
-      flag_share_mode,
-      flag_apply_ip_filter,
-      flag_paused,
-      flag_auto_managed,
-      flag_duplicate_is_error,
-      flag_merge_resume_trackers,
-      flag_update_subscribe,
-      flag_super_seeding,
-      flag_sequential_download,
-      flag_use_resume_save_path,
-      flag_pinned,
-      flag_merge_resume_http_seeds,
-      flag_stop_when_ready,
-   };
-
-   int version;
-   boost::shared_ptr<torrent_info> ti;
-   std::vector<std::string> trackers;
-   std::vector<std::string> url_seeds;
-   std::vector<std::pair<std::string, int> > dht_nodes;
-   std::string name;
-   std::string save_path;
-   std::vector<char> resume_data;
-   storage_mode_t storage_mode;
-   storage_constructor_type storage;
-   void* userdata;
-   std::vector<boost::uint8_t> file_priorities;
-   std::string trackerid;
-   std::string url;
-   std::string uuid;
-   std::string source_feed_url;
-   boost::uint64_t flags;
-   sha1_hash info_hash;
-   int max_uploads;
-   int max_connections;
-   int upload_limit;
-   int download_limit;
-};
+![Code 1](./assets/code1.PNG?raw=true "Code1")
